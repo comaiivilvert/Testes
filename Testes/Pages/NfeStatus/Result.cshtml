@@ -1,0 +1,15 @@
+@page
+@model Testes.Pages.NfeStatus.ResultModel
+@{
+    ViewData["Title"] = "Resultado";
+}
+
+<h1>Resultado</h1>
+
+<div>
+    <p>UF: @Model.Uf</p>
+    <p>Ambiente: @Model.Ambiente</p>
+    <p>Status HTTP: @Model.StatusCode</p>
+    <p>Disponível: @(Model.IsAvailable ? "Sim" : "Não")</p>
+    <a asp-page="Index">Voltar</a>
+</div>

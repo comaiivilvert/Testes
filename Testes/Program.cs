@@ -1,3 +1,5 @@
+using Testes.Services;
+
 namespace Testes
 {
     public class Program
@@ -8,6 +10,7 @@ namespace Testes
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            builder.Services.AddHttpClient<NfeStatusService>();
 
             var app = builder.Build();
 
